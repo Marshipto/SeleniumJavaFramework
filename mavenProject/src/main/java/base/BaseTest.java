@@ -25,7 +25,7 @@ public class BaseTest {
 	public void SetUp() throws IOException {
 		if(driver == null)
 		{
-			fr = new FileReader("C:\\Users\\luis_\\.eclipse\\eclipseWokspace\\mavenProject\\src\\main\\java\\utilities\\config.properties");
+			fr = new FileReader("C:\\Users\\luis_\\git\\repository2\\mavenProject\\src\\main\\java\\utilities\\config.properties");
 			pro.load(fr);
 		}
 		if (pro.getProperty("browser").equalsIgnoreCase("firefox")) {
@@ -55,7 +55,7 @@ public class BaseTest {
 	}
 	@AfterTest
 	public void TearDown() {
-		driver.close();
+		//driver.close();
 	}
 
 }
